@@ -6,7 +6,7 @@
 	                    http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
 	<persistence-unit name="EclipseLinkExemploPU"
 		transaction-type="RESOURCE_LOCAL">
-		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		 <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> 
 		
 		
 		<class>entidades.Cliente</class>
@@ -14,9 +14,9 @@
 		
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-235-116-235.compute-1.amazonaws.com:5432/depj865bpfl4nh" />
-			<property name="javax.persistence.jdbc.user" 	value="bnkoporvntbssh" />
-			<property name="javax.persistence.jdbc.password" value="c2254b30070a934db62a877908ac30fdbe8292049d5079a154a01c36571c1bd4" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-235-116-235.compute-1.amazonaws.com:5432/d4kj7nskgu6gam" />
+			<property name="javax.persistence.jdbc.user" 	value="sgmximjclqarsg" />
+			<property name="javax.persistence.jdbc.password" value="20ab768bd6fa7b381aaed5c2fa81a6be422eca1186bc11b67d9f65b28805763b" />
 			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
 			 
 			<property name="eclipselink.jdbc.property.useSSL" value="true" />
