@@ -63,6 +63,15 @@
  		<p:column headerText="Endereço">
 	        <h:outputText value="#{cli.endereco}" />
 	    </p:column>	    
+	    <p:column headerText="Ped.">
+           <p:commandButton update="clientesList formulario" 
+                        value="Pedidos" icon="ui-icon-closethick"
+                          actionListener="#{clienteMB.delete(cli.id)}"
+                        ajax="true" styleClass="ui-priority-primary">
+              <p:confirm header="Confirmação" message="Confirma a exclusão?" icon="pi pi-exclamation-triangle" />
+              
+           </p:commandButton>
+		</p:column>
 	    <p:column headerText="Alt.">
            <p:commandButton update="formulario" 
                         value="Alterar" icon="fa-edit"
@@ -79,15 +88,7 @@
            </p:commandButton>
            
 		</p:column>
-		<p:column headerText="Ped.">
-           <p:commandButton update="clientesList formulario" 
-                        value="Pedidos" icon="ui-icon-closethick"
-                          actionListener="#{clienteMB.delete(cli.id)}"
-                        ajax="true" styleClass="ui-priority-primary">
-              <p:confirm header="Confirmação" message="Confirma a exclusão?" icon="pi pi-exclamation-triangle" />
-              
-           </p:commandButton>
-		</p:column>			        
+					        
      </p:dataTable>
      
      <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
